@@ -46,9 +46,7 @@
     UIActivityViewController *controller = [[UIActivityViewController alloc]initWithActivityItems:items applicationActivities:nil];
     
     // and present it
-    [self presentViewController:controller animated:YES completion:^{
-        // executes after the user selects something
-    }];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 - (IBAction)shareImageExcludeSocial:(id)sender {
@@ -108,7 +106,27 @@
     popController.permittedArrowDirections = UIPopoverArrowDirectionAny;
     popController.barButtonItem = self.navigationItem.leftBarButtonItem;
     
+    // access the completion handler
+    controller.completionWithItemsHandler = ^(NSString *activityType,
+                                              BOOL completed,
+                                              NSArray *returnedItems,
+                                              NSError *error){
+        // react to the completion
+        if (completed) {
+            
+            // user shared an item
+            NSLog(@"We used activity type%@", activityType);
+            
+        } else {
+            
+            // user cancelled
+            NSLog(@"We didn't want to share anything after all.");
+        }
+        
+        if (error) {
+            NSLog(@"An Error occured: %@, %@", error.localizedDescription, error.localizedFailureReason);
+        }
+    };
 }
-
 
 @end

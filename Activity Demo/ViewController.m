@@ -46,7 +46,7 @@
     UIActivityViewController *controller = [[UIActivityViewController alloc]initWithActivityItems:items applicationActivities:nil];
     
     // and present it
-    [self presentViewController:controller animated:YES completion:nil];
+    [self presentActivityController:controller];
 }
 
 - (IBAction)shareImageExcludeSocial:(id)sender {
@@ -98,7 +98,7 @@
 
 - (void)presentActivityController:(UIActivityViewController *)controller {
     
-    // iPad: make the presentation a Popover
+    // for iPad: make the presentation a Popover
     controller.modalPresentationStyle = UIModalPresentationPopover;
     [self presentViewController:controller animated:YES completion:nil];
     

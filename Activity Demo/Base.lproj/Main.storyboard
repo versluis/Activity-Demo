@@ -16,29 +16,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="three" translatesAutoresizingMaskIntoConstraints="NO" id="VBx-hc-AcL">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aFk-E8-yBz">
+                                <rect key="frame" x="196" y="210" width="208" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hR7-ac-dhU">
+                                        <rect key="frame" x="0.0" y="0.0" width="208" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Share image (default)"/>
+                                        <connections>
+                                            <action selector="shareImageDefault:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8fR-n8-ZiU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zA-54-00N">
+                                        <rect key="frame" x="0.0" y="50" width="208" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Share image (no FB or Twitter)"/>
+                                        <connections>
+                                            <action selector="shareImageExcludeSocial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7OS-3V-gYV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5R-iH-jOw">
+                                        <rect key="frame" x="0.0" y="100" width="208" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Share image (exclude actions)"/>
+                                        <connections>
+                                            <action selector="shareExcludeActions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qn8-tI-UCR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlO-GO-QnZ">
+                                        <rect key="frame" x="0.0" y="150" width="208" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Share some text"/>
+                                        <connections>
+                                            <action selector="shareText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y5q-pr-WB1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
-                            </imageView>
+                            </stackView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="VBx-hc-AcL" secondAttribute="trailing" id="2e6-P9-F8S"/>
-                            <constraint firstItem="VBx-hc-AcL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DqV-Sj-XPO"/>
-                            <constraint firstItem="VBx-hc-AcL" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="F1h-lp-FuJ"/>
-                            <constraint firstItem="VBx-hc-AcL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cRr-rH-0gA"/>
+                            <constraint firstItem="aFk-E8-yBz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1gQ-1R-9k8"/>
+                            <constraint firstItem="aFk-E8-yBz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h12-mL-Xjh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="UIActivityController Demo" id="gag-VI-fPw">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="OKh-Ob-gPg">
-                            <connections>
-                                <action selector="actionButton:" destination="BYZ-38-t0r" id="qh4-rL-jZi"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="48e-LJ-EWZ"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="imageView" destination="VBx-hc-AcL" id="rZ3-mT-hi9"/>
+                        <outlet property="stackView" destination="aFk-E8-yBz" id="Fbp-jD-Z4X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -65,7 +93,4 @@
             <point key="canvasLocation" x="354" y="1089"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="three" width="2448" height="3264"/>
-    </resources>
 </document>

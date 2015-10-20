@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eXm-Lk-qDv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="15B30a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eXm-Lk-qDv">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9048"/>
     </dependencies>
     <scenes>
         <!--UIActivityController Demo-->
@@ -16,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aFk-E8-yBz">
-                                <rect key="frame" x="196" y="210" width="208" height="180"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aFk-E8-yBz">
+                                <rect key="frame" x="196" y="210" width="231" height="230"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hR7-ac-dhU">
-                                        <rect key="frame" x="0.0" y="0.0" width="208" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="231" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Share image (default)"/>
                                         <connections>
@@ -28,15 +29,23 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zA-54-00N">
-                                        <rect key="frame" x="0.0" y="50" width="208" height="30"/>
+                                        <rect key="frame" x="0.0" y="50" width="231" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Share image (no FB or Twitter)"/>
                                         <connections>
                                             <action selector="shareImageExcludeSocial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7OS-3V-gYV"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5R-iH-jOw">
-                                        <rect key="frame" x="0.0" y="100" width="208" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDB-8K-woi">
+                                        <rect key="frame" x="0.0" y="100" width="231" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Share image (only FB and Twitter)"/>
+                                        <connections>
+                                            <action selector="shareTwoSocials:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZIP-bt-eCj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5R-iH-jOw">
+                                        <rect key="frame" x="0.0" y="150" width="231" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Share image (exclude actions)"/>
                                         <connections>
@@ -44,7 +53,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlO-GO-QnZ">
-                                        <rect key="frame" x="0.0" y="150" width="208" height="30"/>
+                                        <rect key="frame" x="0.0" y="200" width="231" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Share some text"/>
                                         <connections>

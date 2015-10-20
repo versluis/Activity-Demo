@@ -17,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aFk-E8-yBz">
-                                <rect key="frame" x="196" y="210" width="231" height="230"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aFk-E8-yBz">
+                                <rect key="frame" x="196" y="210" width="208" height="180"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hR7-ac-dhU">
-                                        <rect key="frame" x="0.0" y="0.0" width="231" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="208" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Share image (default)"/>
                                         <connections>
@@ -29,23 +29,15 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zA-54-00N">
-                                        <rect key="frame" x="0.0" y="50" width="231" height="30"/>
+                                        <rect key="frame" x="0.0" y="50" width="208" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Share image (no FB or Twitter)"/>
                                         <connections>
                                             <action selector="shareImageExcludeSocial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7OS-3V-gYV"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDB-8K-woi">
-                                        <rect key="frame" x="0.0" y="100" width="231" height="30"/>
-                                        <animations/>
-                                        <state key="normal" title="Share image (only FB and Twitter)"/>
-                                        <connections>
-                                            <action selector="shareTwoSocials:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZIP-bt-eCj"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5R-iH-jOw">
-                                        <rect key="frame" x="0.0" y="150" width="231" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5R-iH-jOw">
+                                        <rect key="frame" x="0.0" y="100" width="208" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Share image (exclude actions)"/>
                                         <connections>
@@ -53,7 +45,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlO-GO-QnZ">
-                                        <rect key="frame" x="0.0" y="200" width="231" height="30"/>
+                                        <rect key="frame" x="0.0" y="150" width="208" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Share some text"/>
                                         <connections>
@@ -67,8 +59,8 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aFk-E8-yBz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1gQ-1R-9k8"/>
-                            <constraint firstItem="aFk-E8-yBz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h12-mL-Xjh"/>
+                            <constraint firstItem="aFk-E8-yBz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Alm-l3-TBc"/>
+                            <constraint firstItem="aFk-E8-yBz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dIU-Ix-lRX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="UIActivityController Demo" id="gag-VI-fPw">

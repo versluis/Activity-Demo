@@ -66,23 +66,6 @@
     [self presentActivityController:controller];
 }
 
-- (IBAction)shareTwoSocials:(id)sender {
-    
-    // grab an item we want to share
-    UIImage *image = [UIImage imageNamed:@"three"];
-    NSArray *items = @[image];
-    
-    // share only with specific services
-    // NSArray *activities = @[UIActivityTypePostToFacebook, UIActivityTypePostToTwitter];
-    NSArray *activities = @[UIActivityTypeSaveToCameraRoll];
-    
-    // init the controller with those
-    UIActivityViewController *controller = [[UIActivityViewController alloc]initWithActivityItems:items applicationActivities:activities];
-    
-    // and present the controller
-    [self presentActivityController:controller];
-}
-
 - (IBAction)shareExcludeActions:(id)sender {
     
     // grab an item we want to share

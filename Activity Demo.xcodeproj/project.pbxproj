@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D25506031F64527C00823117 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D25506021F64527C00823117 /* README.md */; };
 		D2C322D41BD2D2AA006753F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C322D31BD2D2AA006753F8 /* main.m */; };
 		D2C322D71BD2D2AA006753F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C322D61BD2D2AA006753F8 /* AppDelegate.m */; };
 		D2C322DA1BD2D2AA006753F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C322D91BD2D2AA006753F8 /* ViewController.m */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D25506021F64527C00823117 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		D2C322CF1BD2D2AA006753F8 /* Activity Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Activity Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C322D31BD2D2AA006753F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D2C322D51BD2D2AA006753F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		D2C322D11BD2D2AA006753F8 /* Activity Demo */ = {
 			isa = PBXGroup;
 			children = (
+				D25506021F64527C00823117 /* README.md */,
 				D2C322D51BD2D2AA006753F8 /* AppDelegate.h */,
 				D2C322D61BD2D2AA006753F8 /* AppDelegate.m */,
 				D2C322D81BD2D2AA006753F8 /* ViewController.h */,
@@ -276,6 +279,7 @@
 			files = (
 				D2C322DA1BD2D2AA006753F8 /* ViewController.m in Sources */,
 				D2C322D71BD2D2AA006753F8 /* AppDelegate.m in Sources */,
+				D25506031F64527C00823117 /* README.md in Sources */,
 				D2C322D41BD2D2AA006753F8 /* main.m in Sources */,
 				D2C322E01BD2D2AA006753F8 /* Activity_Demo.xcdatamodeld in Sources */,
 			);
